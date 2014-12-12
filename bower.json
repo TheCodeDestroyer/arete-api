@@ -1,0 +1,17 @@
+{
+  "name": "ares",
+  "version": "1.0.0",
+  "homepage": "https://github.com/TheCodeDestroyer/ares",
+  "authors": [
+    "TheCodeDestroyer <the.code.destroyer@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
