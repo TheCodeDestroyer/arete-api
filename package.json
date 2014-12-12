@@ -6,6 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "engines":{
+    "node": "0.10.x",
+    "npm": "1.4.x"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/TheCodeDestroyer/ares.git"
@@ -15,5 +19,11 @@
   "bugs": {
     "url": "https://github.com/TheCodeDestroyer/ares/issues"
   },
-  "homepage": "https://github.com/TheCodeDestroyer/ares"
+  "homepage": "https://github.com/TheCodeDestroyer/ares",
+  "dependencies": {
+    "express": "^4.10.5",
+    "mongoose" : "~3.8.0",
+    "body-parser" : "~1.4.2",
+    "method-override" : "~2.0.2"
+  }
 }
