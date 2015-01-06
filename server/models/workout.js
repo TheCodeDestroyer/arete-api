@@ -7,5 +7,6 @@ module.exports = mongoose.model(modelName, {
     exercises : { type : Array },
     start : { type : Number },
     duration : { type : Number },
-    averageDuration : { type : Number }
+    averageDuration : { type : Number },
+    _lastChange : { type : Number }
 }, modelName);
