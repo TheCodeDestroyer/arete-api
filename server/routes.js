@@ -8,12 +8,14 @@ module.exports = function(app) {
             if (err)
                 res.send(err);
 
+            console.log(settings);
+
             res.json(settings);
         });
     });
 
-    app.get('*', function(req, res) {
-        res.sendfile('./app/index.html'); // load our public/index.html file
+    app.get('/', function(req, res) {
+        res.sendFile(__dirname + '/app/index.html');
     });
 
 };
