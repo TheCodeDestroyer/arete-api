@@ -1,6 +1,5 @@
-var mongoose = require('mongoose');
-
-var modelName = 'repeat';
+var mongoose = require('mongoose'),
+    modelName = 'repeat';
 
 module.exports = mongoose.model(modelName, {
     times : { type : Number },

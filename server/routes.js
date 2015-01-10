@@ -1,13 +1,14 @@
 module.exports = function(app) {
 
     app.get('/api/*', function(req, res) {
-        var splitPath = req.path.split('/');
+        var splitPath = req.path.split('/'),
+            Model = '';
 
         if (splitPath.length !== 3) {
             res.send({ error: 'Internal server error' });
         }
         else {
-            var Model = require('./models/' + splitPath[2]);
+            Model = require('./models/' + splitPath[2]);
             Model.find(function (err, array) {
 
                 if (err)

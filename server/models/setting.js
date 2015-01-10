@@ -1,6 +1,5 @@
-var mongoose = require('mongoose');
-
-var modelName = 'setting';
+var mongoose = require('mongoose'),
+    modelName = 'setting';
 
 module.exports = mongoose.model(modelName, {
     nameCode : {type : String, default: '_NEW'},

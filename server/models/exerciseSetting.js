@@ -1,6 +1,5 @@
-var mongoose = require('mongoose');
-
-var modelName = 'exerciseSettings';
+var mongoose = require('mongoose'),
+    modelName = 'exerciseSettings';
 
 module.exports = mongoose.model(modelName, {
     workoutCode : { type : String },

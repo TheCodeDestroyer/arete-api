@@ -1,6 +1,5 @@
-var mongoose = require('mongoose');
-
-var modelName = 'durationType';
+var mongoose = require('mongoose'),
+    modelName = 'durationType';
 
 module.exports = mongoose.model(modelName, {
     code : { type : Number },
